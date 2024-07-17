@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<Html>  
+    <head>   
+        <title>  
+            Registration Page  
+        </title>  
+        <STYLE>
+            
+            /* NAVBAR MENU */
+            .menu {
+                display: flex;
+                gap: 1em;
+                font-size: 18px;
+            }
+            .menu li:hover {
+                background-color: #4c9e9e;
+                border-radius: 5px;
+                transition: 0.3s ease;
+            }
+            .menu li {
+                padding: 5px 14px;
+            }
+            
+            body{
+                
+                text-align: center;
+                align: center;
+            }
+
+            input[type=text],[type=password],[type=number]{
+                width: 20%;
+                margin: 8px 0;
+                padding: 7px 10px;
+                display: inline-block;
+                border:1px solid #ccc;
+                box-sizing: border-box;
+            }
+
+            button{
+                background-color:#4CAF50;
+                width: 10%;
+                padding: 9px 5px;
+                margin:5px 0;
+                cursor:pointer;
+                border:none;
+                color:#ffffff;
+                margin-left: 80px;
+            }
+
+            button:hover{
+                opacity:0.8;
+            }
+
+            #fn,#ln,#un,#pwd,#em,#mn,#fm,#cy{
+                font-family:'Lato', sans-serif;
+                color: gray;
+            }
+
+            #em{
+                margin-left:30px;
+            }
+            .reg a{
+                margin-left: 2px;
+            }
+            
+        </style>
+
+    </head>  
+    <body >  
+         <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">Book Store</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+               
+                <div class="menu">
+                    <li><a href="index.jsp">Home</a></li>
+                   
+                </div>
+            </ul>
+        </nav>
+        <div class="reg"> 
+            <form action="Login" method="post">
+                <h2>Login Form</h2>
+                
+                 <label  for="r5" id="em">Email :</label>
+                <input type="text" name="email" id="r5"><br/>
+                
+                <label  for="r4" id="pwd">Password :</label>
+                <input type="password" name="password" id="r4"><br/>
+                
+               
+                <button type="submit" value="Submit" id="button">login</button>
+                <a href="register.html">Create An Account</A>
+                
+
+            </form>
+        </div> 
+    </body>  
+</html>  
